@@ -4,7 +4,7 @@
 
 #1. Create Directory
 
-#2. Clone Repository
+#2. Clone Repository - 
 git clone  https://github.com/Pooja-Patidar34/Library-Management-System.git
 
 #3. Pip install -m requirement.txt
