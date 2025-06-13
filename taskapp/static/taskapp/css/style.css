@@ -1,0 +1,301 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #5380a4, #aaa4a4);
+    color: #333;
+}
+
+/*================== Navigation ==================*/
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav .logo {
+    margin-left: 5%;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav .menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav .menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.nav .menu ul li {
+    list-style: none;
+}
+
+.nav .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav .menu ul li a:hover {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+/*================== Footer ==================*/
+
+.footer {
+    background-color: #1e3c72;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+/*================== Author Form ==================*/
+
+.Author, .Book, .Borrow {
+    max-width: 500px;
+    min-height: 60vh;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.Author label,
+.Book label,
+.Borrow label {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.Author input[type="text"],
+.Author input[type="email"],
+.Author textarea,
+.Book input[type="text"],
+.Book input[type="date"],
+.Book select,
+.Borrow input[type="text"],
+.Borrow input[type="date"],
+.Borrow select {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.Author textarea {
+    height: 120px;
+}
+
+input[type='submit'] {
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #00587a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type='submit']:hover {
+    background-color: #007ea7;
+}
+
+/*================== Home Page ==================*/
+
+.main {
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(to right, #d9e4f5, #f0f8ff);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main h1 {
+    font-size: 70px;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.main p {
+    font-size: 36px;
+    color: #333;
+}
+
+/*================== Record Button & Dropdown ==================*/
+
+.Record ul {
+    height: 25vh;
+    width: 180px;
+    background-color: #e0e0f8;
+    position: absolute;
+    top: 10vh;
+    right: -100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: right 0.4s ease;
+}
+
+.Record ul li {
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Record ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #073c99;
+}
+
+.Record button {
+    position: relative;
+    margin-top: 2px;
+    right: 50px;
+    height: 40px;
+    width: 120px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5ac5d8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Record button:hover {
+    background-color: #78ceac;
+}
+
+/*================== Book Record Table ==================*/
+
+.BookRecord {
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.BookRecord h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e3c72;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.BookRecord .Export {
+    margin-bottom: 10px;
+    float: right;
+    height: 40px;
+    width: 100px;
+    background-color: #00c853;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.BookRecord .Export:hover {
+    background-color: #00a844;
+}
+
+.BookRecord .Export a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.BookRecord table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.BookRecord th,
+.BookRecord td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.BookRecord th {
+    background-color: #edf2f7;
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+.BookRecord tr:hover {
+    background-color: #f1f9ff;
+}
+
+/*================== Pagination ==================*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #1e3c72;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #cbd5e0;
+}
+
+.pagination .prev i,
+.pagination .next i {
+    font-size: 16px;
+}
+
