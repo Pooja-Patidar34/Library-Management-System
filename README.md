@@ -7,7 +7,7 @@
 #2. Clone Repository - 
 git clone  https://github.com/Pooja-Patidar34/Library-Management-System.git
 
-#3. Pip install -m requirement.txt
+#3. pip install -m requirement.txt
 
 #4. cd LibraryTask
 
