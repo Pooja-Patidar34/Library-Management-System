@@ -5,10 +5,7 @@
 #1. Create Directory
 
 #2. Clone Repository
-https://github.com/Pooja-Patidar34/django-library-system.git
-
-
-git clone 
+git clone  https://github.com/Pooja-Patidar34/Library-Management-System.git
 
 #3. Pip install -m requirement.txt
 
